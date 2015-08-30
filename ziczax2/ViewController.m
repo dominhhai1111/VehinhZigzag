@@ -16,12 +16,42 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+     [self Vehinh];
+}
+-(void) Vehinh {
+    int n=5 ;
+   
+    printf("    +       +       +");
+    printf("\n");
+    int m=0, k=0;
+    while(m<3){
+        for(int i=1; i<4-m ;i++)
+        {
+            printf(" ");
+        }
+        printf("+");
+        while(k<2)
+        {
+            for(int i=0; i<(1+2*m) ;i++)
+            {
+                printf(" ");
+            }
+            printf("+");
+            for(int i=0; i<2*(n-1)-3-2*m ;i++)
+            {
+                printf(" ");
+            }
+            printf("+");
+            k++;
+        }
+        printf("\n");
+        m++;
+        k=0;
+    }
+    printf("+       +       +");
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 @end
